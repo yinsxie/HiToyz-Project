@@ -1,0 +1,768 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Jost', sans-serif;
+}
+
+nav {
+  background-color: #193785;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.logo img {
+  height: 30px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.menu li a:hover {
+  background-color: #dddddd1c;
+  border-radius: 4px;
+}
+
+.menu li a.active {
+  background-color: #3e5fb3;
+  border-radius: 4px;
+}
+
+.profile {
+  margin-left: auto;
+}
+
+.profile a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.profile i {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  
+  margin: 10px auto;
+  max-width: 1200px;
+}
+
+.search input[type="text"] {
+  padding: 6px;
+  border: none;
+  /* border-radius: 4px; */
+  width: 100%;
+  background-color: #D9D9D9;
+}
+
+.search button {
+  padding: 6px 10px;
+  border: none;
+  background-color: #193785;
+  color: #fff;
+  /* border-radius: 4px; */
+  cursor: pointer;
+}
+
+.searchtoyz {
+  letter-spacing: 0.35em;
+}
+
+
+  
+
+
+@media (max-width: 600px) {
+  .profile span {
+    display: none;
+  }
+}
+
+.container-center {
+  max-width: 600px; /* Atur lebar maksimum sesuai kebutuhan Anda */
+  margin: 0 auto; /* Membuat form berada di tengah secara horizontal */
+  padding: 0 10px; /* Atur jarak padding sesuai kebutuhan Anda */
+}
+
+/* Media query untuk tampilan mobile */
+@media (max-width: 600px) {
+  .container-center {
+      width: 100%; /* Mengisi lebar penuh saat dibuka di perangkat mobile */
+  }
+}
+
+.center-judul {
+  text-align: center;
+  margin-bottom: 60px;
+  letter-spacing: 0.35em;
+}
+
+.center-judul h1{
+  font-weight: 590;
+}
+
+.formcenter {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10%;
+}
+
+.form-group-tengah {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.form-group-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Mengatur jarak antara label dan input */
+  margin-bottom: 10px;
+}
+
+.form-group-center label {
+  flex-basis: 30%;
+  font-size: 20px; /* Ukuran teks label yang diperbesar */
+  margin-left: 1px;
+  font-weight: normal;
+  text-align: start;
+  align-self: flex-start; /* Mengatur posisi vertikal label menjadi di atas */
+}
+
+
+.form-group-center input,
+.form-group-center select {
+  flex: 1;
+  padding: 5px;
+  /* border-radius: 4px; */
+  border: 1px solid #ccc;
+  background-color: #D9D9D9;
+}
+
+.agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.agreement input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #000000;
+  outline: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.agreement input[type="checkbox"]:checked {
+  background-color: #00ff48;
+  border-color: #000000;
+}
+
+.formcenter-submit {
+
+  display: flex;
+  justify-content: center;
+}
+
+.formcenter-submit button[type="button"] {
+  width: 40%;
+  padding: 12px;
+  font-size: 18px;
+  background-color: #D9D9D9;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+
+.formcenter-submit button[type="button"]:hover {
+  background-color: #bbbbbb;
+}
+
+.tengah {
+  text-align: center;
+}
+
+.container-center {
+  display: flex;
+}
+  
+.warnalogin {
+  color: #034AFF;
+}
+
+.warnaregis {
+  color: #034AFF;
+}
+
+.jarak-atas1{
+  margin-top: 3vh;
+}
+
+/* Main Secction*/
+
+.container{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.judul{
+  margin-top: 3%;
+}
+
+.judul h1 {
+  font-size: 36px;
+  font-weight: 550;
+  letter-spacing: 0.245em;
+  
+}
+.judul h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+.judul p {
+  font-size: 32px;
+  margin-bottom: 4%;
+}
+
+@media (max-width: 768px) {
+  .judul h1 {
+    margin-top: 3vh;
+    margin-bottom: 2%;
+    font-size: 24px;
+    font-weight: 550;
+  }
+  .judul h2 {
+    margin-top: 3vh;
+    margin-bottom: 2%;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .judul p {
+    margin-top: 3vh;
+    font-size: 18px;
+  }
+
+}
+
+
+
+/* @media (max-width: 768px) {
+  .judul p {
+    margin-top: 3vh;
+    font-size: 18px;
+  }
+} */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+.card {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
+/* Media query untuk tampilan mobile */
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+footer {
+  background-color: rgba(25, 55, 133, 0.1);
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer1{
+  position: fixed;
+  background-color: rgba(25, 55, 133, 0.1);
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.judulgallery h1 {
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 0.245em;
+  font-family: 'Jost', sans-serif;
+  font-weight: normal;
+}
+
+.judulgallery h2 {
+  text-align: center;
+  margin-top: 3%;
+  font-size: 36px;
+  font-family: 'Jost', sans-serif;
+  font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  .judulgallery h1 {
+    margin-top: 3vh;
+    font-size: 24px;
+    font-family: 'Jost', sans-serif;
+    font-weight: normal;
+  }
+
+  .judulgallery h2 {
+    margin-top: 5vh;
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+    font-weight: normal;
+  }
+}
+
+.card-gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardGallery {
+  flex: 1;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+
+}
+
+.cardGallery img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media query untuk tampilan mobile */
+@media (max-width: 768px) {
+  .card-gallery {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cardGallery {
+    flex: 0 0 80%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Event Secction */
+.image-with-content {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 4%;
+}
+
+.image-container {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-container {
+  flex: 1;
+  max-width: 50%;
+}
+
+.text-container h1 {
+  margin-top: 0;
+  font-weight: 520;
+  letter-spacing: 0.12em;
+}
+
+.text-container p {
+  word-wrap: break-word;
+  font-size: 24px;
+}
+
+
+ 
+  @media (max-width: 768px) {
+    .judul h1 {
+      margin-top: 5vh;
+      font-weight: 550;
+    }
+    .image-with-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 5vh;
+    }
+
+    .image-container {
+      margin-bottom: 10px;
+    }
+  
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .text-container {
+      margin-top: 1vh;
+      max-width: 90%;
+      justify-content: center;
+      margin-bottom: 5vh;
+      text-align: center;
+      font-weight: normal;
+    }
+  }
+
+  .judulprofile h1 {
+    font-size: 48px;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.35em;
+    font-weight: 400;
+  }
+
+  .container-profile {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .data {
+    font-size: 36px;
+    flex-grow: 1;
+    text-align: left;
+    
+  }
+
+  .gambar {
+    margin-left: 10px;
+  }
+
+  .gambar img {
+    height: 600%;
+    width: auto;
+  }
+
+  @media (max-width: 768px) {
+    .container-profile {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .info {
+      flex-direction: column;
+    }
+
+    .gambar img {
+      height: fit-content;
+      width: fit-content;
+    }
+
+    .data p {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #696969;
+    }
+  }
+   /* .container-payment {
+    width: 50%;
+    padding-top: 5%;
+    margin: 0 auto;;
+  }
+
+  .container-payment h1 {
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 0.35em;
+  }
+
+  .container-payment p {
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 0.35em; 
+   }
+  */
+
+  .container-payment span {
+    color: #034AFF;
+  }
+   
+  .container-payment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px); 
+    text-align: center;
+    position: relative;
+  }
+  .container-payment h1 {
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 0.35em;
+    margin-bottom: 5vh;
+    margin-top: -20vh;
+  }
+  
+  .container-payment p {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.35em; 
+  }
+  
+  .buy-button {
+    display: block;
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #428bca;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  /* productpage */
+  .container-product {
+    width: 50%;
+    padding-top: 5%;
+    margin: 0 auto;
+  }
+
+  .detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .gambarProduct {
+    flex-shrink: 0;
+    margin-right: 20px;
+  }
+
+  .gambarProduct img {
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .data {
+    flex-grow: 1;
+  }
+
+  .data h1 {
+    font-size: 36px;
+    font-weight: 550;
+  }
+
+  .data p {
+    font-size: 32px;
+    color: #696969;
+  }
+
+  .buy-button {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #8596C2;
+    color: #fff;
+    font-size: 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 768px) { 
+    .detail {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .gambarProduct {
+      margin-top: 5vh;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .data h1 {
+      font-size: 26px;
+      text-align: left;
+    }
+  
+    .data p {
+      font-size: 20px;
+      text-align: left;
+    }
+    .buy-button {
+      display: block;
+      width: auto;
+      padding: 10px 20px;
+      background-color: #8596C2;
+      color: #fff;
+      font-size: 30px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  }
+
+/* end product page */
+  
+  .logout-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 10px 20px;
+    background-color: #f5004e;
+    color: #fff;
+    font-size: 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .home-link {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .watermark {
+    position: absolute;
+    margin-bottom: 5vh;
+    bottom: 20px;
+    right: 20px;
+    width: 20vh;
+    height: auto;
+  }
+  
+
+  .judul-b4{
+    margin-top: 3%;
+  }
+  
+  /* .judul-b4 h1 {
+    font-size: 36px;
+  } */
+
+  .judul-b4 h2 {
+    font-size: 36px;
+    font-weight: 590;
+  }
+
+  .loginfirst span{
+    font-size: 30px;
+    color: #034AFF;
+
+  }
+
+  .loginfirst h1 {
+    font-weight: 550;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .judul-b4 h2 {
+      margin-top: 3vh;
+      margin-bottom: 2%;
+      font-size: 32px;
+
+    }
+  }
+  
+  .judul-b4 p {
+    font-size: 28px;
+    margin-bottom: 4%;
+  }
+  
+  @media (max-width: 768px) {
+    /* .judul-b4 p {
+      margin-top: 3vh;
+      font-size: 18px;
+    } */
+  }
+
+  .loginfirst {
+    margin-top: 10vh;
+    text-align: center;
+  }

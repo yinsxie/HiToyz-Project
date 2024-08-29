@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;548&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container-center">
+        <div class="formcenter">
+            <div class="center-judul">
+                <h1>REGISTRATION</h1>
+            </div>
+            <form class="form-group-tengah">
+                <div class="form-group-center">
+                    <label for="nama">Name</label>
+                    <input type="text" id="nama" name="nama">
+                </div>
+                <br>
+                <div class="form-group-center">
+                    <label for="birthday">Birthday</label>
+                    <input type="date" id="birthday" name="birthdate">
+                </div>
+                <br>
+                <div class="form-group-center">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <br>
+                <div class="form-group-center">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <br>
+                <div class="agreement">
+                    <input type="checkbox" id="agreement" name="agreement">
+                    <label for="agreement">I agree to the terms and conditions</label>
+                </div>
+                <br>
+                <div class="formcenter-submit">
+        
+                    <label id="error"></label>
+                    <button type="button" onclick="validate()">SUBMIT</button>
+                  
+                </div>                 
+            </form>
+            <div class="tengah">
+                <p>Already have an account? <a href="login.html" class="warnalogin">Login here</a></p>
+            </div>
+        </div>   
+    </div>
+</body>
+</html>
